@@ -100,6 +100,12 @@
         });
 
         Object.defineProperty(this, 'parentNode', {});
+
+        Object.defineProperty(this, 'ownerDocument', {
+            get: function () {
+                return document;
+            }
+        });
     };
 
     /**
